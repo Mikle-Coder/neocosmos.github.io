@@ -33,3 +33,7 @@ footer {
     width: 60%;
     height: 60%;
 }
+
+.rounded {
+  background-color: #ffffff;
+}
