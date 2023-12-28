@@ -8,7 +8,7 @@ function getPhrase() {
     .then(response => response.json())
     .then(data => {
       text = data.phrase;
-      setTypeWriterColor();
+      setTypeWriterRandomColor();
       typeWriter();
     })
     .catch(error => {
@@ -26,7 +26,7 @@ function typeWriter() {
   }
 }
 
-function setTypeWriterColor() {
+function setTypeWriterRandomColor() {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
   document.getElementById('text-typing').style.borderRight = `.15em solid ${randomColor}`;
 }
